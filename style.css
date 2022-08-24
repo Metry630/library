@@ -1,0 +1,12 @@
+#cardContainer {
+    color:aquamarine;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+}
+.newCard{
+    background-color: blue;
+    width: 10vw;
+    height: 10vh;
+    color:aquamarine;
+}
