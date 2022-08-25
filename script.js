@@ -1,4 +1,15 @@
 let container = document.getElementById('cardContainer')
+let addBook = document.getElementById('addBook')
+let modalOverlay = document.getElementById('modalOverlay')
+let closeModal = document.getElementById("closeModal")
+let saveBook = document.getElementById("save")
+let newTitle = document.getElementsByName("Title")
+let newAuthor = document.getElementsByName("Author")
+let newPages = document.getElementsByName("Pages")
+let newStatus = document.getElementsByName("readStatus")
+addBook.addEventListener('click', () => displayModal())
+closeModal.addEventListener('click', () => hideModalWindow());
+
 
 let myLib = []
 function Book(title, author, pages, readStatus) {
@@ -48,6 +59,13 @@ function handleClick(bookTitle){
     displayBooks(myLib)
 }
 
+function displayModal(){
+    modalOverlay.style.display = "flex"
+}
+function hideModalWindow(){
+    modalOverlay.style.display = "none"
+}
+
 let book1= new Book("Sea of Monsters", "Rick Riordan", 312, true);
 
 addBookToLib(book1)
@@ -58,6 +76,11 @@ addBookToLib(book2)
 console.log(myLib)
 
 displayBooks(myLib)
+
+
+
+
+
 
 
 

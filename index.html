@@ -8,9 +8,22 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div id = "cardContainer">
-
+    <button id = "addBook">Add Book</button>
+    <div id = "modalOverlay" class = 'modal'>
+        <div class = "modal">
+            <label for="Title" class = 'modal'>Title: </label>
+            <input type = "text" name = "Title">
+            <label for="Author">Author: </label>
+            <input type = "text" name = "Author">
+            <label for="Pages">Page count: </label>
+            <input type = "number" name = "Pages">
+            <label for="readStatus">Have you read it?</label>
+            <input type="checkbox" name = "readStatus">
+            <button id = "closeModal">X</button>
+            <button id = "save">Save Book</button>
+        </div>
     </div>
+    <div id = "cardContainer"></div>
     <script src = "script.js" defer></script>
 </body>
 </html>

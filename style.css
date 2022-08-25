@@ -10,3 +10,20 @@
     height: 10vh;
     color:aquamarine;
 }
+#modalOverlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#modalOverlay #modal {
+    max-width: 650px;
+    width: 100%;
+    background: white;
+    height: 400px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
