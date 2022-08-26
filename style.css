@@ -3,11 +3,12 @@
     width: 80vw;
     height: 80vh;
     display: flex;
+    gap: 50px;
 }
 .newCard{
     background-color: blue;
-    width: 100px;
-    height: 10vh;
+    width: 150px;
+    height: 200px;
     color:aquamarine;
 }
 #modalOverlay {
@@ -18,12 +19,31 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
-#modalOverlay #modal {
-    max-width: 650px;
+#modalOverlay {
     width: 100%;
-    background: white;
-    height: 400px;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+  
     display: none;
     align-items: center;
     justify-content: center;
+    align-content: center;
 }
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#modalBackground {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+  
