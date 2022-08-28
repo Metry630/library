@@ -11,28 +11,27 @@
     <button id = "addBook">Add Book</button>
     <div id = "modalOverlay" class = 'modal'>
         <div class = "modal" id = "modalBackground">
+            <div>
                 <div>
-                    <label for="Title" class = 'modal'>Title: </label>
-                    <input type = "text" name = "Title" id = 'title'>
+                    <input type = "text" name = "Title" id = 'title' placeholder="Title">
                 </div>
                 <div>
-                    <label for="Author">Author: </label>
-                    <input type = "text" name = "Author" id = 'author'>
+                    <input type = "text" name = "Author" id = 'author' placeholder="Author">
                 </div>
                 <div>
-                    <label for="Pages">Page count: </label>
-                    <input type = "number" name = "Pages" id = 'pageNum'>
+                    <input type = "number" name = "Pages" id = 'pageNum' placeholder="Pages">
                 </div>
                 <div>
                     <label for="readStatus">Have you read it?</label>
                     <input type="checkbox" name = "readStatus" id = 'readStatus'>
                 </div>
                 <div>
-                    <button id = "closeModal">X</button>
-                </div>
-                <div>
                     <button id = "save">Save Book</button>
                 </div>
+                <div>
+                    <button id = "closeModal">Cancel</button>
+                </div>
+            </div>
         </div>
     </div>
     <div id = "cardContainer"></div>
